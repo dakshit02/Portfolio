@@ -1,0 +1,29 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Env
+.env
+.env.*.local
+
+# Build / bundles
+dist/
+build/
+out/
+.next/
+.nuxt/
+
+# Caches / coverage / logs
+.cache/
+.parcel-cache/
+coverage/
+logs/
+*.log
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
