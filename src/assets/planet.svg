@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 3D-style semi-transparent planet SVG (scalable) -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <!-- main planet radial gradient -->
+    <radialGradient id="gPlanet" cx="30%" cy="25%" r="80%">
+      <stop offset="0%" stop-color="#ffeab3" stop-opacity="0.95"/>
+      <stop offset="40%" stop-color="#ffb84d" stop-opacity="0.9"/>
+      <stop offset="70%" stop-color="#ff7a00" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#d95500" stop-opacity="0.6"/>
+    </radialGradient>
+
+    <!-- subtle inner glow for the crescent highlight -->
+    <radialGradient id="gCrescent" cx="20%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9"/>
+      <stop offset="70%" stop-color="#ffffff" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- ring gradient -->
+    <linearGradient id="gRing" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.6"/>
+    </linearGradient>
+
+    <!-- translucent texture (tiny dots) -->
+    <pattern id="pNoise" width="6" height="6" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="0.6" fill="#ffffff" fill-opacity="0.06" />
+      <circle cx="4" cy="4" r="0.6" fill="#000000" fill-opacity="0.03" />
+    </pattern>
+
+    <!-- soft shadow filter -->
+    <filter id="fSoftShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="12" stdDeviation="20" flood-color="#000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <!-- background is transparent intentionally -->
+
+  <!-- planet group with shadow -->
+  <g filter="url(#fSoftShadow)">
+    <!-- main sphere -->
+    <circle cx="230" cy="300" r="180" fill="url(#gPlanet)" fill-opacity="0.95" />
+
+    <!-- subtle surface texture overlay -->
+    <circle cx="230" cy="300" r="180" fill="url(#pNoise)" opacity="0.85" />
+
+    <!-- darker night-side overlay for 3D feel -->
+    <ellipse cx="270" cy="300" rx="160" ry="180" transform="rotate(-20 270 300)" fill="#000" fill-opacity="0.16"/>
+
+    <!-- crescent highlight to indicate light from top-left -->
+    <path d="M120 210 C140 160, 210 140, 260 150 C300 158, 320 200, 300 240 C260 300, 170 320, 120 210 Z"
+          fill="url(#gCrescent)" opacity="0.85" />
+
+    <!-- thin bright accent near top-left -->
+    <ellipse cx="170" cy="200" rx="28" ry="18" fill="#fff" opacity="0.12" />
+  </g>
+
+  <!-- planet rings (tilted) -->
+  <g transform="translate(0,0) rotate(-18 300 300)" opacity="0.9">
+    <ellipse cx="350" cy="300" rx="260" ry="40" fill="none" stroke="url(#gRing)" stroke-width="18" stroke-linecap="round" opacity="0.45" />
+    <ellipse cx="350" cy="300" rx="240" ry="34" fill="none" stroke="url(#gRing)" stroke-width="6" stroke-linecap="round" opacity="0.22"/>
+  </g>
+
+  <!-- faint lens glows to blend with starry background -->
+  <circle cx="150" cy="120" r="36" fill="#ffffff" opacity="0.03" />
+  <circle cx="420" cy="420" r="48" fill="#ffffff" opacity="0.02" />
+
+</svg>
