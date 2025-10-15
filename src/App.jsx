@@ -16,10 +16,19 @@ function App() {
   return (
     <>
       <div className='flex flex-col'>
-        <Navbar />
-        <About />
-        <Skills />
-        <Experience />
+        <section id='navbar'>
+          <Navbar />
+        </section>
+        <section id='about'>
+          <About />
+        </section>
+        <section id='skills'>
+          <Skills />
+        </section>
+        <section id='experience'>
+          <Experience />
+        </section>
+
       </div>
 
       <StarBackground />
