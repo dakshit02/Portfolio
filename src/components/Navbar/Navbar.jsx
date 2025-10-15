@@ -1,10 +1,10 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Navbar = () => {
 
-  const [isActive, setIsActive] = useState(false);
   const [activeSec, setActiveSec] = useState();
+  const [scrolled, setScrolled] = useState(false);
 
   const menuItems = [
     { id: "about", label: "About" },
@@ -15,16 +15,31 @@ const Navbar = () => {
   ]
 
   const handleOnClick = (id) => {
-    
-    const section  = document.getElementById(id)
-    setIsActive(true);
+
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView();
+    }
     setActiveSec(id);
 
   }
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50)
+    }
+    window.addEventListener("scroll", handleScroll);
+
+  }, [])
+
+
+
+
+
 
   return (
-    <div className='nav text-amber-50 flex justify-around m-4 gap-5'>
+
+    <div className={`nav text-amber-50 justify-center flex p-4 gap-30 w-full fixed top-0 z-50 ${scrolled ? "backdrop-blur-lg" : ""}  `}>
       <div className="name flex gap-1 text-lg font-bold cursor-pointer items-center">
         <span className='text-purple-400'>&lt;</span><span >Dakshit</span><span className='text-purple-400 text-2xl'>/</span><span>Chandel</span><span className='text-purple-400'>&gt;</span>
       </div>
@@ -42,8 +57,8 @@ const Navbar = () => {
 
           })
         }
-        <li className='cursor-pointer hover:text-purple-400 text-2xl'><FaGithub /></li>
-        <li className='cursor-pointer hover:text-purple-400 text-2xl'><FaLinkedin /></li>
+        <a href="https://github.com/dakshit02" target="_blank"><li className='cursor-pointer hover:text-purple-400 text-2xl'><FaGithub /></li></a>
+        <a href="https://www.linkedin.com/in/dakshit02/" target="_blank"><li className='cursor-pointer hover:text-purple-400 text-2xl'><FaLinkedin /></li></a>
       </ul>
 
     </div>

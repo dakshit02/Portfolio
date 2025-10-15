@@ -15,7 +15,7 @@ function App() {
 
   return (
     <>
-      <div className='flex flex-col'>
+      <div className='flex flex-col  '>
         <section id='navbar'>
           <Navbar />
         </section>

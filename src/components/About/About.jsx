@@ -5,7 +5,7 @@ import Planet from '../../assets/planet.svg';
 
 const About = () => {
   return (
-    <div className="flex justify-around items-center mt-20  ">
+    <div className="flex justify-around items-center mt-30">
       <div className="text-amber-50 flex flex-col  space-y-3 w-2xl">
         <div className="text-5xl font-bold">Hi, I am</div>
         <div className="text-6xl font-bold ">Dakshit Chandel</div>
