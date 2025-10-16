@@ -22,12 +22,12 @@ const Tools = () => {
       tiltMaxAngleY={15}
       className="rounded-4xl"
     >
-      <div className="frontend h-full flex flex-col items items-center border-1 border-amber-50 rounded-4xl bg-gray-900 shadow-[0_0_15px_5px_rgba(168,85,247,0.7)] p-10">
+      <div className="frontend h-full flex flex-col items-center border-1 border-amber-50 rounded-4xl bg-gray-900 shadow-[0_0_15px_5px_rgba(168,85,247,0.7)] p-7">
 
         <div className='font-semibold text-2xl '>TOOLS</div>
         <div className='grid grid-cols-3 gap-10 mt-5'>
-          <div className='flex  flex-col items-centre'>
-            <img className='h-12 w-12' src={vscode} alt="" />
+          <div className='flex flex-col items-centre justify-center'>
+            <img className='h-10 w-10' src={vscode} alt="" />
             <span>VS Code</span>
           </div>
 
@@ -66,7 +66,7 @@ const Tools = () => {
             <span>Netlify</span>
           </div>
 
-          <div className='gitx  flex-col items-center'>
+          <div className='flex  flex-col items-center'>
             <img className='h-12 w-12' src={figma} alt="" />
             <span>Figma</span>
           </div>

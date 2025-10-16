@@ -16,7 +16,7 @@ const Languages = () => {
             className="rounded-4xl"
         >
 
-            <div className="frontend h-full flex flex-col items items-center border-1 border-amber-50 rounded-4xl bg-gray-900 shadow-[0_0_15px_5px_rgba(168,85,247,0.7)] p-7">
+            <div className="frontend h-full flex flex-col items-center border-1 border-amber-50 rounded-4xl bg-gray-900 shadow-[0_0_15px_5px_rgba(168,85,247,0.7)] p-7">
                 <div className='font-semibold text-2xl'>LANGUAGES</div>
                 <div className='grid grid-cols-3 gap-10 mt-5'>
                     <div className='flex  flex-col items-center'>

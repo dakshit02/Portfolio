@@ -10,7 +10,7 @@ const Navbar = () => {
     { id: "about", label: "About" },
     { id: "skills", label: "Skills" },
     { id: "experience", label: "Experience" },
-    { id: "project", label: "Projects" },
+    { id: "projects", label: "Projects" },
     { id: "eduction", label: "Education " },
   ]
 
@@ -39,7 +39,7 @@ const Navbar = () => {
 
   return (
 
-    <div className={`nav text-amber-50 justify-center flex p-4 gap-30 w-full fixed top-0 z-50 ${scrolled ? "backdrop-blur-lg" : ""}  `}>
+    <div className={`nav text-amber-50 justify-center flex p-4 gap-30 w-full fixed top-0 z-90 ${scrolled ? "backdrop-blur-lg" : ""}  `}>
       <div className="name flex gap-1 text-lg font-bold cursor-pointer items-center">
         <span className='text-purple-400'>&lt;</span><span >Dakshit</span><span className='text-purple-400 text-2xl'>/</span><span>Chandel</span><span className='text-purple-400'>&gt;</span>
       </div>
