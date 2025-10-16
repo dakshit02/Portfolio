@@ -7,6 +7,7 @@ import Experience from './components/Experience/Experience'
 import Navbar from './components/Navbar/Navbar'
 import Projects from './components/Projects/Projects'
 import Skills from './components/Skills/Skills'
+import Contact from './components/Contact/Contact'
 
 
 
@@ -33,6 +34,9 @@ function App() {
         </section>
         <section id='education'>
           <Education />
+        </section>
+        <section>
+          <Contact />
         </section>
 
       </div>
