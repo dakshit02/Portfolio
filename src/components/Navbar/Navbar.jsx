@@ -11,7 +11,7 @@ const Navbar = () => {
     { id: "skills", label: "Skills" },
     { id: "experience", label: "Experience" },
     { id: "projects", label: "Projects" },
-    { id: "eduction", label: "Education " },
+    { id: "education", label: "Education " },
   ]
 
   const handleOnClick = (id) => {

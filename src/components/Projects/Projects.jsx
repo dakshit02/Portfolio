@@ -1,6 +1,9 @@
 import spotify from '../../assets/spotify.png';
 import twitter from '../../assets/twitter.png';
 import contactapp from '../../assets/contactapp.jpg';
+import portfolio from '../../assets/portfolio.png';
+import faceattend from '../../assets/faceattend.png';
+import virtualcalculator from '../../assets/virtualcalculator.png';
 
 import { BsBoxArrowUpRight } from "react-icons/bs";
 
@@ -36,9 +39,40 @@ const Projects = () => {
       tech: "React , Tailwind ,Firebase",
       desc: "A responsive contact management web application built using React and Tailwind CSS, with Firebase as the backend for real-time data storage. This project allows users to add, view, edit, and delete contacts seamlessly, showcasing dynamic UI updates, state management in React, and real-time database integration.",
       codeLink: "https://github.com/dakshit02/FireBase-Contact-App",
-      siteLink: ""
+      siteLink: null
 
     },
+    {
+
+      id: portfolio,
+      name: "Personal Portfolio Website",
+      tech: "React , Tailwind ,",
+      desc: "A modern and fully responsive portfolio website built using React and Tailwind CSS. It showcases projects, skills, and experience through a clean and interactive user interface. The portfolio features smooth animations, component-based structure, and responsive design.",
+      codeLink: "https://github.com/dakshit02/Portfolio",
+      siteLink: null
+
+    },
+    {
+
+      id: faceattend,
+      name: "Face Attendance with Real-Time-DB",
+      tech: "Python , face_recognition,Supabase",
+      desc: "A smart attendance management system built using Python and the face_recognition library, integrated with Supabase as a real-time cloud database. This project automatically detects and recognizes faces through a webcam feed and marks attendance in real time, eliminating the need for manual input.",
+      codeLink: "https://github.com/dakshit02/Face-Attendance-with-Real-Time-Database",
+      siteLink: null
+
+    },
+    {
+
+      id: virtualcalculator,
+      name: "Virtual Calculator ",
+      tech: "Python , OpenCV",
+      desc: "An interactive virtual calculator built using Python, designed to be controlled through finger gestures instead of physical key presses. The project utilizes OpenCV and Mediapipe for real-time hand tracking and gesture detection, allowing users to type on the keys displayed on the screen using their finger movements.",
+      codeLink: "https://github.com/dakshit02/CALCSPHERE",
+      siteLink: null
+
+    },
+
 
   ]
 
@@ -56,23 +90,26 @@ const Projects = () => {
           {
             ProjectItems.map((items) => {
               return (
-                < div className='flex '>
-                  <div className=' flex flex-col items-center justify-center w-95 max-w-95 gap-5  p-10 rounded-4xl border-1 border-amber-50 bg-blue-950 z-80  transition-transform duration-300 hover:scale-105 hover:shadow-[0_0_15px_5px_rgba(168,85,247,0.7)] ]'>
-                    <div className='flex flex-col items-center justify-center gap-2'>
-                      <img className='flex flex-col items-centre rounded-2xl w-80 h-50 justify-center object-contain bg-amber-50' src={items.id} alt="" />
-                      <div className='font-semibold text-xl'>{items.name}</div>
-                      <div className='text-gray-400'>{items.tech}</div>
-                      <div className='overflow-hidden break-words w-75 max-w-75 h-50 max-h-50 overflow-y-scroll'>{items.desc}</div>
-                    </div>
-                    <div className="buttons flex gap-4 ">
-                      <a className='bg-purple-600 p-3 rounded-lg w-30 flex items-center justify-center' href={items.codeLink} target='_blank'>View Code</a>
-                      <a className='bg-purple-600 p-3 rounded-lg w-30 flex items-center justify-center gap-2' href={items.siteLink} target='_blank'>
-                        <span>View Site</span>
-                        <BsBoxArrowUpRight />
-                      </a>
-                    </div>
+
+                <div className=' flex flex-col items-center justify-center w-95 max-w-95 gap-5  p-10 rounded-4xl border-1 border-amber-50 bg-gray-900 z-80  transition-transform duration-300 hover:scale-105 hover:shadow-[0_0_15px_5px_rgba(168,85,247,0.7)] ]'>
+                  <div className='flex flex-col items-center justify-center gap-2'>
+                    <img className='flex flex-col items-centre rounded-2xl w-80 h-50 justify-center object-contain bg-amber-50' src={items.id} alt="" />
+                    <div className='font-semibold text-xl'>{items.name}</div>
+                    <div className='text-gray-400'>{items.tech}</div>
+                    <div className='overflow-hidden break-words w-75 max-w-75 h-50 max-h-50 overflow-y-scroll'>{items.desc}</div>
+                  </div>
+                  <div className="buttons flex gap-4 ">
+                    <a className='bg-purple-600 p-3 rounded-lg w-30 flex items-center justify-center' href={items.codeLink} target='_blank'>View Code</a>
+
+
+                    <a className={items.siteLink === null ? 'hidden' : 'bg-purple-600 p-3 rounded-lg w-30 flex items-center justify-center gap-2'} href={items.siteLink} target='_blank'>
+                      <span>View Site</span>
+                      <BsBoxArrowUpRight />
+                    </a>
+
                   </div>
                 </div>
+
               )
 
             })

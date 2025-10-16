@@ -31,6 +31,9 @@ function App() {
         <section id='projects'>
           <Projects />
         </section>
+        <section id='education'>
+          <Education />
+        </section>
 
       </div>
 
