@@ -1,0 +1,7 @@
+@media (max-width:501px) {
+    .foot-nav-bar {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}

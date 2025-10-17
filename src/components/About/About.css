@@ -1,0 +1,10 @@
+@media (max-width:819px) {
+    .sec-container {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        z-index: 70;
+        margin-top: 40px;
+    }
+    
+}

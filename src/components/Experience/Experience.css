@@ -1,0 +1,11 @@
+@media (max-width:956px) {
+
+    .experience-dec {
+     
+        flex-direction: column;
+        gap: 15px;
+    }
+    .line-sep{
+        visibility: hidden;
+    }
+}

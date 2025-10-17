@@ -1,6 +1,7 @@
 import muj from '../../assets/muj.png';
 import mayo from '../../assets/mayo.png';
 import ryan from '../../assets/ryan.png';
+import "./education.css"
 
 const Education = () => {
 
@@ -12,14 +13,14 @@ const Education = () => {
   ] 
 
   return (
-    <div className="text-amber-50 flex flex-col mt-50 gap-15 relative items-center ">
+    <div className=" text-amber-50 flex flex-col mt-50 gap-15 relative items-center ">
       <div className="flex flex-col gap-8 items-center" >
         <div className="skills text-4xl font-bold">EDUCATION</div>
         <div className="text-3xl font-extrabold absolute top-4  text-purple-600">________</div>
-        <div className="font-bold text-lg text-gray-400">My education has been a journey of learning and development. Here are the details of my academic background</div>
+        <div className="font-bold text-lg text-gray-400 text-center">My education has been a journey of learning and development. Here are the details of my academic background</div>
       </div>
 
-      <div className='grid grid-cols-3 gap-15'>
+      <div className='edu-card-dec grid grid-cols-3 gap-15'>
         {
           EducationItems.map((items) => {
             return (

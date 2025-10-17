@@ -1,0 +1,7 @@
+@media (max-width:887px) {
+
+    .tech-cards{
+        grid-template-columns: 1fr;
+    }
+    
+}

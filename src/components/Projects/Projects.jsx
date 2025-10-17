@@ -4,6 +4,7 @@ import contactapp from '../../assets/contactapp.jpg';
 import portfolio from '../../assets/portfolio.png';
 import faceattend from '../../assets/faceattend.png';
 import virtualcalculator from '../../assets/virtualcalculator.png';
+import "./Projects.css"
 
 import { BsBoxArrowUpRight } from "react-icons/bs";
 
@@ -83,10 +84,10 @@ const Projects = () => {
         <div className="flex flex-col gap-8 items-center" >
           <div className="skills text-4xl font-bold">PROJECTS</div>
           <div className="text-3xl font-extrabold absolute top-4  text-purple-600">________</div>
-          <div className="font-bold text-lg text-gray-400">A showcase of the projects I have worked on, highlighting my skills and experience in various technologiess</div>
+          <div className="font-bold text-lg text-gray-400 text-center">A showcase of the projects I have worked on, highlighting my skills and experience in various technologiess</div>
         </div>
 
-        <div className='grid grid-cols-3 gap-15'>
+        <div className='project-card-dec grid grid-cols-3 gap-15'>
           {
             ProjectItems.map((items) => {
               return (

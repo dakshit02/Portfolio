@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { FaGithub, FaLinkedin, FaTwitterSquare } from "react-icons/fa";
+import "./Footer.css"
 
 
 const Footer = () => {
@@ -35,7 +36,7 @@ const Footer = () => {
             <div className='text-purple-400 font-semibold text-lg'>
                 DAKSHIT CHANDEL
             </div>
-            <ul className="list-none flex justify-center items-center gap-8 text-gray-300 font-normal ">
+            <ul className="foot-nav-bar list-none flex justify-center items-center gap-8 text-gray-300 font-normal ">
                 {
                     menuItems.map((items) => {
                         return (

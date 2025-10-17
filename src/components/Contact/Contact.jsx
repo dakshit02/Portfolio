@@ -56,7 +56,7 @@ const Contact = () => {
                 <div className="flex flex-col gap-8 items-center" >
                     <div className="skills text-4xl font-bold">Contact</div>
                     <div className="text-3xl font-extrabold absolute top-25  text-purple-600">________</div>
-                    <div className="font-bold text-lg text-gray-400">I’d love to hear from you—reach out for any opportunities or questions!</div>
+                    <div className="font-bold text-lg text-gray-400 text-center">I’d love to hear from you—reach out for any opportunities or questions!</div>
                 </div>
 
                 {/* Contact Form */}
