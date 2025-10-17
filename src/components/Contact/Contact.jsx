@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Footer from "../Footer/Footer";
 
 const Contact = () => {
     const form = useRef();
@@ -9,7 +10,7 @@ const Contact = () => {
 
     const sendEmail = (e) => {
         e.preventDefault();
- 
+
         emailjs
             .sendForm(
                 "service_n1yv74h",  // Replace with your EmailJS Service ID
@@ -102,9 +103,13 @@ const Contact = () => {
                             Send
                         </button>
                     </form>
-                </div>
 
+                </div>
+                <Footer />
             </div>
+
+
+
         </div >
     )
 

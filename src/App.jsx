@@ -35,7 +35,7 @@ function App() {
         <section id='education'>
           <Education />
         </section>
-        <section>
+        <section id="contact">
           <Contact />
         </section>
 

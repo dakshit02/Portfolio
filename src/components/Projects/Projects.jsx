@@ -91,7 +91,7 @@ const Projects = () => {
             ProjectItems.map((items) => {
               return (
 
-                <div className=' flex flex-col items-center justify-center w-95 max-w-95 gap-5  p-10 rounded-4xl border-1 border-amber-50 bg-gray-900 z-80  transition-transform duration-300 hover:scale-105 hover:shadow-[0_0_15px_5px_rgba(168,85,247,0.7)] ]'>
+                <div key={items.id} className=' flex flex-col items-center justify-center w-95 max-w-95 gap-5  p-10 rounded-4xl border-1 border-amber-50 bg-gray-900 z-80  transition-transform duration-300 hover:scale-105 hover:shadow-[0_0_15px_5px_rgba(168,85,247,0.7)] ]'>
                   <div className='flex flex-col items-center justify-center gap-2'>
                     <img className='flex flex-col items-centre rounded-2xl w-80 h-50 justify-center object-contain bg-amber-50' src={items.id} alt="" />
                     <div className='font-semibold text-xl'>{items.name}</div>

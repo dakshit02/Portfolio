@@ -24,7 +24,7 @@ const Education = () => {
           EducationItems.map((items) => {
             return (
 
-              <div className='flex flex-col gap-5 items-center h-100 w-95 max-w-95 p-5 rounded-4xl border-1 border-amber-50 bg-gray-900  z-80  transition-transform duration-300 hover:scale-105 hover:shadow-[0_0_15px_5px_rgba(168,85,247,0.7)] ]'>
+              <div key={items.id} className='flex flex-col gap-5 items-center h-100 w-95 max-w-95 p-5 rounded-4xl border-1 border-amber-50 bg-gray-900  z-80  transition-transform duration-300 hover:scale-105 hover:shadow-[0_0_15px_5px_rgba(168,85,247,0.7)] ]'>
                 <div className=' flex justify-center gap-5 '>
                   <img className='rounded-2xl w-25 h-25 bg-amber-50' src={items.id} alt="" />
                   <div>
