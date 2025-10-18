@@ -34,7 +34,7 @@ const About = () => {
 
         <div className="z-70">
           <a
-            href="https://drive.google.com/file/d/1rOPfoSqHLHxJnLNuOzadnZ9umxEid2wv/view?usp=sharing "
+            href="https://drive.google.com/file/d/1ZmU-IEdJexSXjc9JJ-_cs1VOima4tfPB/view?usp=sharing"
             target="blank"
             className="mt-6 text-white font-bold py-3 px-6 rounded-lg bg-purple-600 w-[28%] text-xl shadow-[0_0_25px_5px_rgba(168,85,247,0.7)] transition-transform duration-300 hover:scale-105 "
 
